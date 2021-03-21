@@ -1,0 +1,356 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'DES_orignal.v1': elapsed time 2.63 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+solution remove -solution des_orig.v3
+# Info: Starting transformation 'analyze' on solution 'DES_orignal.v1' (SOL-8)
+solution select des_orig.v3
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+go analyze
+DES_orignal.v1
+des_orig.v3
+# Info: Branching solution 'DES_orignal.v1' at state 'new' (PRJ-2)
+# Info: Completed transformation 'analyze' on solution 'DES_syn.v1': elapsed time 2.49 seconds, memory usage 1578472kB, peak memory usage 1578472kB (SOL-9)
+# Info: Branching solution 'DES_syn.v1' at state 'new' (PRJ-2)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Info: Starting transformation 'analyze' on solution 'DES_syn.v1' (SOL-8)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+go compile
+Source file analysis completed (CIN-68)
+DES_syn.v1
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.54 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+go analyze
+Moving session transcript to file "/home/ds6365/catapult.log"
+/INPUTFILES/2
+solution file add ./des_tb.cpp
+solution file set /home/ds6365/des_tb.cpp -exclude true
+/INPUTFILES/1
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+solution file add ./des_fun.h
+
+# Messages from "go compile"
+
+# Info: Design complexity at end of 'compile': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'compile' on solution 'DES_orignal.v1': elapsed time 31.07 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+go compile
+Inlining routine 'operator<<<8, false>' (CIN-14)
+# Info: Starting transformation 'compile' on solution 'DES_orignal.v1' (SOL-8)
+Inlining routine 'operator>><8, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+Optimizing block '/des_check' ... (CIN-4)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+# Info: Running transformation 'compile' on solution 'DES_orignal.v1': elapsed time 29.87 seconds, memory usage 1709544kB, peak memory usage 1709544kB (SOL-15)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Design 'des_check' was read (SOL-1)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator|<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Loop '/des_check/core/for#1' iterated at most 56 times. (LOOP-2)
+Loop '/des_check/core/for' iterated at most 64 times. (LOOP-2)
+Loop '/des_check/core/loop_IP_INV' iterated at most 64 times. (LOOP-2)
+Loop '/des_check/core/loop_DES_rounds' iterated at most 16 times. (LOOP-2)
+Loop '/des_check/core/loop_exapansion' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_PC2_subKey' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_post_Sbox_permutation' iterated at most 32 times. (LOOP-2)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Loop '/des_check/core/loop_S_box' iterated at most 8 times. (LOOP-2)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator>><64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Found top design routine 'des_check' specified by directive (CIN-52)
+Generating synthesis internal form... (CIN-3)
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/DES_orignal.v1/CDesignChecker/design_checker.sh'
+Inlining routine 'des_check' (CIN-14)
+Synthesizing routine 'des_check' (CIN-13)
+Inlining routine 'operator>><64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+
+# Messages from "go libraries"
+
+# Info: Design complexity at end of 'libraries': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'libraries' on solution 'DES_orignal.v1': elapsed time 1.13 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+# Info: Starting transformation 'libraries' on solution 'DES_orignal.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler -vendor Nangate -technology 045nm
+solution library remove *
+go libraries
+solution library add ccs_sample_mem
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_mem.lib' [ccs_sample_mem]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/nangate-45nm_beh.lib' [nangate-45nm_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+
+# Messages from "go assembly"
+
+# Info: Design complexity at end of 'assembly': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'assembly' on solution 'DES_orignal.v1': elapsed time 1.50 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+/CLOCKS {clk {-CLOCK_PERIOD 1 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 0.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 1 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 0.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# Info: Starting transformation 'assembly' on solution 'DES_orignal.v1' (SOL-8)
+go assembly
+
+# Messages from "go architect"
+
+# Info: Completed transformation 'loops' on solution 'DES_orignal.v1': elapsed time 3.97 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 472, Real ops = 87, Vars = 187 (SOL-21)
+Loop '/des_check/core/for#1' is being fully unrolled (56 times). (LOOP-7)
+Loop '/des_check/core/for' is being fully unrolled (64 times). (LOOP-7)
+Loop '/des_check/core/loop_exapansion' is being fully unrolled (48 times). (LOOP-7)
+Loop '/des_check/core/loop_PC2_subKey' is being fully unrolled (48 times). (LOOP-7)
+/des_check/core/loop_DES_rounds/UNROLL no
+directive set /des_check/core/loop_DES_rounds -UNROLL no
+# Info: Starting transformation 'loops' on solution 'DES_orignal.v1' (SOL-8)
+go architect
+Loop '/des_check/core/main' is left rolled. (LOOP-4)
+Loop '/des_check/core/loop_post_Sbox_permutation' is being fully unrolled (32 times). (LOOP-7)
+Loop '/des_check/core/loop_S_box' is being fully unrolled (8 times). (LOOP-7)
+Loop '/des_check/core/loop_DES_rounds' is left rolled. (LOOP-4)
+Loop '/des_check/core/loop_IP_INV' is being fully unrolled (64 times). (LOOP-7)
+# Info: Design complexity at end of 'memories': Total ops = 467, Real ops = 87, Vars = 180 (SOL-21)
+# Info: Completed transformation 'memories' on solution 'DES_orignal.v1': elapsed time 0.86 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+I/O-Port Resource '/des_check/input:rsc' (from var: input) mapped to 'ccs_ioport.ccs_in' (size: 64). (MEM-2)
+# Info: Starting transformation 'memories' on solution 'DES_orignal.v1' (SOL-8)
+I/O-Port Resource '/des_check/return:rsc' (from var: return) mapped to 'ccs_ioport.ccs_out' (size: 64). (MEM-2)
+I/O-Port Resource '/des_check/key:rsc' (from var: key) mapped to 'ccs_ioport.ccs_in' (size: 64). (MEM-2)
+# Info: Design complexity at end of 'cluster': Total ops = 475, Real ops = 87, Vars = 180 (SOL-21)
+# Info: Completed transformation 'cluster' on solution 'DES_orignal.v1': elapsed time 1.40 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+Module 'ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/.sif/solIndex_3_5eb4f3dc-2368-4ee6-a89b-9f940e1a7413.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/.sif/solIndex_3_5eb4f3dc-2368-4ee6-a89b-9f940e1a7413.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/.sif/solIndex_3_f458ba7d-2702-4ce7-94d5-6a1c0790c514.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/.sif/solIndex_3_f458ba7d-2702-4ce7-94d5-6a1c0790c514.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/.sif/solIndex_3_ca736c9d-7df3-4c74-a7c9-c0e8d4f5f7a7.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/.sif/solIndex_3_ca736c9d-7df3-4c74-a7c9-c0e8d4f5f7a7.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/.sif/solIndex_3_dacc10e1-73e0-4e8e-b2d1-e786fe6c93c3.xml' ... (LIB-129)
+# Info: Starting transformation 'cluster' on solution 'DES_orignal.v1' (SOL-8)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/.sif/solIndex_3_dacc10e1-73e0-4e8e-b2d1-e786fe6c93c3.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/.sif/solIndex_3_a2adacd0-8b2b-407d-86c9-c26e37263c9e.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/.sif/solIndex_3_a2adacd0-8b2b-407d-86c9-c26e37263c9e.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/.sif/solIndex_3_078677f4-e6dc-42c6-bf4d-86eb86374581.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/.sif/solIndex_3_078677f4-e6dc-42c6-bf4d-86eb86374581.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3' (CLUSTER-8)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/.sif/solIndex_3_c9f617bd-0d40-4948-be6c-81b48111f7e6.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/.sif/solIndex_3_c9f617bd-0d40-4948-be6c-81b48111f7e6.xml' ... (LIB-129)
+Module 'ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0' in the cache is valid & accepted for CLU 'ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3' (CLUSTER-8)
+Module for the CLU 'ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/.catapult/Cache/10_5c_896140/Cluster/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/.sif/solIndex_3_c9adb80d-6cd7-4966-a06d-26be8e045ddb.xml' ... (LIB-129)
+Module for the CLU 'ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3' has been successfully synthesized (CLUSTER-9)
+Reading solution library '/home/ds6365/DES_SYN_FIN/td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/.sif/solIndex_3_c9adb80d-6cd7-4966-a06d-26be8e045ddb.xml' ... (LIB-129)
+# Info: Design complexity at end of 'architect': Total ops = 866, Real ops = 146, Vars = 221 (SOL-21)
+# Info: Completed transformation 'architect' on solution 'DES_orignal.v1': elapsed time 0.68 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+Design 'des_check' contains '146' real operations. (SOL-11)
+# Info: Starting transformation 'architect' on solution 'DES_orignal.v1' (SOL-8)
+
+# Messages from "go allocate"
+
+# Info: Design complexity at end of 'allocate': Total ops = 866, Real ops = 146, Vars = 221 (SOL-21)
+# Info: Completed transformation 'allocate' on solution 'DES_orignal.v2': elapsed time 1.27 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+# Info: Final schedule of SEQUENTIAL '/des_check/core': Latency = 17, Area (Datapath, Register, Total) = 741.40, 796.88, 1538.28 (CRAAS-12)
+At least one feasible schedule exists. (CRAAS-9)
+Resource allocation and scheduling done. (CRAAS-2)
+Prescheduled LOOP '/des_check/core/core:rlp' (0 c-steps) (SCHD-7)
+Prescheduled LOOP '/des_check/core/main' (2 c-steps) (SCHD-7)
+# Info: Initial schedule of SEQUENTIAL '/des_check/core': Latency = 17, Area (Datapath, Register, Total) = 767.30, 796.88, 1564.17 (CRAAS-11)
+Prescheduled SEQUENTIAL '/des_check/core' (total length 18 c-steps) (SCHD-8)
+CU_DIRECTIVE sid7 SET /des_check/core {EFFORT_LEVEL high}: Race condition
+# Info: Branching solution 'DES_orignal.v2' at state 'architect' (PRJ-2)
+CU_DESIGN sid7 ADD {} {VERSION v2 SID sid7 BRANCH_SID sid6 BRANCH_STATE architect INCREMENTAL 0 STATE architect TRANSFORMING 0 SOLUTION_DIR {} CAT_DIR /home/ds6365/DES_SYN_FIN/ SYNTHESIS_FLOWPKG DesignCompiler UNITS {} STATES {} INPUTFILES {} OUTPUTFILES {} TECHCONFIG {/CONFIG/PARAMETERS/DesignCompiler/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/nangate-45nm_beh/92 /CONFIG/PARAMETERS/DesignCompiler/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ccs_sample_mem/1} SOURCEHIER {} HIERCONFIG {} TECHLIBS {} ESTIMATOR {} FLOWPKGS {} SOLUTIONLIBS {} DATUM {} MESSAGES {} TOP {} SIF_DESIGN_HIER {} ALLOCS {} DIRAPPLIES {} SID_DATA {} SCOPED_C_INTERFACE {} FLOWS_API {} PROPERTIES {} OPT_INFOS {} name DES_orignal}: Race condition
+# Info: Select qualified components for data operations ... (CRAAS-3)
+Performing concurrent resource allocation and scheduling on '/des_check/core' (CRAAS-1)
+Netlist written to file 'schedule.gnt' (NET-4)
+Prescheduled LOOP '/des_check/core/loop_DES_rounds' (1 c-steps) (SCHD-7)
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/DES_orignal.v2/CDesignChecker/design_checker.sh'
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+/des_check/core/DESIGN_GOAL area
+DES_orignal.v1
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+solution remove -solution DES_orignal.v1
+# Info: Starting transformation 'allocate' on solution 'DES_orignal.v2' (SOL-8)
+go allocate
+directive set /des_check/core -DESIGN_GOAL Area
+go architect
+# Info: Design complexity at end of 'allocate': Total ops = 866, Real ops = 146, Vars = 221 (SOL-21)
+# Info: Completed transformation 'allocate' on solution 'DES_orignal.v1': elapsed time 1.21 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+At least one feasible schedule exists. (CRAAS-9)
+Prescheduled LOOP '/des_check/core/loop_DES_rounds' (1 c-steps) (SCHD-7)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# Info: Starting transformation 'allocate' on solution 'DES_orignal.v1' (SOL-8)
+Prescheduled LOOP '/des_check/core/core:rlp' (0 c-steps) (SCHD-7)
+Prescheduled LOOP '/des_check/core/main' (2 c-steps) (SCHD-7)
+go allocate
+# Info: Select qualified components for data operations ... (CRAAS-3)
+Performing concurrent resource allocation and scheduling on '/des_check/core' (CRAAS-1)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Initial schedule of SEQUENTIAL '/des_check/core': Latency = 17, Area (Datapath, Register, Total) = 767.30, 796.88, 1564.17 (CRAAS-11)
+Prescheduled SEQUENTIAL '/des_check/core' (total length 18 c-steps) (SCHD-8)
+# Info: Final schedule of SEQUENTIAL '/des_check/core': Latency = 17, Area (Datapath, Register, Total) = 741.40, 796.88, 1538.28 (CRAAS-12)
+
+# Messages from "go schedule"
+
+# Info: Design complexity at end of 'schedule': Total ops = 836, Real ops = 146, Vars = 298 (SOL-21)
+# Info: Completed transformation 'schedule' on solution 'DES_orignal.v2': elapsed time 3.34 seconds, memory usage 1652200kB, peak memory usage 1709544kB (SOL-9)
+Global signal 'input:rsc.dat' added to design 'des_check' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.triosy.lz' added to design 'des_check' for component 'input:rsc.triosy:obj' (LIB-3)
+# Info: Starting transformation 'schedule' on solution 'DES_orignal.v2' (SOL-8)
+Global signal 'return:rsc.dat' added to design 'des_check' for component 'return:rsci' (LIB-3)
+go extract
+Performing concurrent resource allocation and scheduling on '/des_check/core' (CRAAS-1)
+Report written to file 'cycle.rpt'
+Global signal 'return:rsc.triosy.lz' added to design 'des_check' for component 'return:rsc.triosy:obj' (LIB-3)
+Global signal 'key:rsc.triosy.lz' added to design 'des_check' for component 'key:rsc.triosy:obj' (LIB-3)
+Global signal 'key:rsc.dat' added to design 'des_check' for component 'key:rsci' (LIB-3)
+
+# Messages from "go dpfsm"
+
+# Info: Design complexity at end of 'dpfsm': Total ops = 1233, Real ops = 762, Vars = 301 (SOL-21)
+# Info: Completed transformation 'dpfsm' on solution 'DES_orignal.v2': elapsed time 1.97 seconds, memory usage 1652200kB, peak memory usage 1709544kB (SOL-9)
+# Warning: Extrapolation detected. Script '/home/ds6365/DES_SYN_FIN/DES_orignal.v2/adjust_char_library.tcl' generated. (LIB-142)
+# Info: Starting transformation 'dpfsm' on solution 'DES_orignal.v2' (SOL-8)
+Performing FSM extraction... (FSM-1)
+
+# Messages from "go extract"
+
+# Info: Design complexity at end of 'instance': Total ops = 870, Real ops = 520, Vars = 856 (SOL-21)
+# Info: Completed transformation 'instance' on solution 'DES_orignal.v2': elapsed time 3.33 seconds, memory usage 1652200kB, peak memory usage 1709544kB (SOL-9)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Starting transformation 'instance' on solution 'DES_orignal.v2' (SOL-8)
+# Info: Design complexity at end of 'extract': Total ops = 870, Real ops = 520, Vars = 301 (SOL-21)
+# Info: Completed transformation 'extract' on solution 'DES_orignal.v2': elapsed time 10.78 seconds, memory usage 1652200kB, peak memory usage 1709544kB (SOL-9)
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Starting transformation 'extract' on solution 'DES_orignal.v2' (SOL-8)
+Report written to file 'rtl.rpt'
+# Error: Top function does not appear to have the CCS_BLOCK macro wrapping the function name
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+Netlist written to file 'rtl.v' (NET-4)
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.vhd
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+Add dependent file: ./rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Generating SCVerify testbench files
+order file name is: rtl.vhdl_order_sim.txt
+Finished writing concatenated simulation file: /home/ds6365/DES_SYN_FIN/DES_orignal.v2/concat_sim_rtl.vhdl
+Finished writing concatenated file: /home/ds6365/DES_SYN_FIN/DES_orignal.v2/concat_rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/rtl.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.vhd
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/rtl.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.v
+Add dependent file: ./rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/rtl.vhdl
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/rtl.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Finished writing concatenated simulation file: /home/ds6365/DES_SYN_FIN/DES_orignal.v2/concat_sim_rtl.v
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/rtl.v
+Add dependent file: ./rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/rtl.v
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+generate concat
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/rtl.v
+order file name is: rtl.v_order.txt
+Netlist written to file 'rtl.vhdl' (NET-4)
+Generating scverify_top.cpp ()
+generate concat
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: ./rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/rtl.v
+order file name is: rtl.v_order_sim.txt
+Finished writing concatenated file: /home/ds6365/DES_SYN_FIN/DES_orignal.v2/concat_rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/rtl.v
+Add dependent file: ../td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/rtl.v

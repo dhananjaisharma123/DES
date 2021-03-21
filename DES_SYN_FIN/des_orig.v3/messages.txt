@@ -1,0 +1,141 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'des_orig.v1': elapsed time 2.49 seconds, memory usage 1644008kB, peak memory usage 1644008kB (SOL-9)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+Source file analysis completed (CIN-68)
+des_orig.v1
+# Info: Branching solution 'des_orig.v1' at state 'new' (PRJ-2)
+# Info: Starting transformation 'analyze' on solution 'des_orig.v1' (SOL-8)
+go analyze
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.54 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+go analyze
+Moving session transcript to file "/home/ds6365/catapult.log"
+/INPUTFILES/2
+solution file add ./des_tb.cpp
+solution file set /home/ds6365/des_tb.cpp -exclude true
+/INPUTFILES/1
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+solution file add ./des_fun.h
+
+# Messages from "go compile"
+
+# Info: Design complexity at end of 'compile': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'compile' on solution 'des_orig.v1': elapsed time 31.03 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+Inlining routine 'operator<<<8, false>' (CIN-14)
+Found top design routine 'des_check' specified by directive (CIN-52)
+Generating synthesis internal form... (CIN-3)
+Inlining routine 'des_check' (CIN-14)
+Synthesizing routine 'des_check' (CIN-13)
+go compile
+# Info: Starting transformation 'compile' on solution 'des_orig.v1' (SOL-8)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator>><64, false>' (CIN-14)
+Optimizing block '/des_check' ... (CIN-4)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator>><64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Loop '/des_check/core/loop_IP_INV' iterated at most 64 times. (LOOP-2)
+Loop '/des_check/core/loop_DES_rounds' iterated at most 16 times. (LOOP-2)
+# Info: Running transformation 'compile' on solution 'des_orig.v1': elapsed time 29.87 seconds, memory usage 1709544kB, peak memory usage 1709544kB (SOL-15)
+Design 'des_check' was read (SOL-1)
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/des_orig.v1/CDesignChecker/design_checker.sh'
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+Loop '/des_check/core/loop_exapansion' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_PC2_subKey' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_post_Sbox_permutation' iterated at most 32 times. (LOOP-2)
+Loop '/des_check/core/loop_S_box' iterated at most 8 times. (LOOP-2)
+Loop '/des_check/core/for#1' iterated at most 56 times. (LOOP-2)
+Loop '/des_check/core/for' iterated at most 64 times. (LOOP-2)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator|<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator>><8, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+# Info: Branching solution 'des_orig.v3' at state 'compile' (PRJ-2)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/des_orig.v3/CDesignChecker/design_checker.sh'
+solution library remove *
+go compile
+# Info: Design complexity at end of 'libraries': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'libraries' on solution 'des_orig.v2': elapsed time 0.35 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+go libraries
+solution remove -solution des_orig.v1
+des_orig.v1
+solution library add Xilinx_ROMS
+# Info: Branching solution 'des_orig.v2' at state 'compile' (PRJ-2)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Starting transformation 'libraries' on solution 'des_orig.v2' (SOL-8)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/des_orig.v2/CDesignChecker/design_checker.sh'
+solution library add mgc_Xilinx-VIRTEX-uplus-1_beh -- -rtlsyntool Vivado -manufacturer Xilinx -family VIRTEX-uplus -speed -1 -part xcvu11p-flga2577-1-e
+# Info: Design complexity at end of 'libraries': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'libraries' on solution 'des_orig.v1': elapsed time 0.54 seconds, memory usage 1644008kB, peak memory usage 1709544kB (SOL-9)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Starting transformation 'libraries' on solution 'des_orig.v1' (SOL-8)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+solution library add mgc_Xilinx-VIRTEX-7-1_beh -- -rtlsyntool Vivado -manufacturer Xilinx -family VIRTEX-7 -speed -1 -part xc7vx485tffg1157-1
+solution library remove *
+go libraries
+solution library add Xilinx_ROMS
+Reading component library '$MGC_HOME/pkgs/ccs_xilinx/Xilinx_ROMS.lib' [Xilinx_ROMS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/ccs_xilinx/mgc_Xilinx-VIRTEX-7-1_beh.lib' [mgc_Xilinx-VIRTEX-7-1_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)

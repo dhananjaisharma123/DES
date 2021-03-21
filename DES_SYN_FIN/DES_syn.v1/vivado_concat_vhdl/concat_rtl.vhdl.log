@@ -1,0 +1,656 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 21 12:48:21 2021
+# Process ID: 48782
+# Current directory: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# Command line: vivado -mode batch -source /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv -log /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.log 
+# Log file: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.log
+# Journal file: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/vivado.jou
+#-----------------------------------------------------------
+source /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv
+# puts "-- Requested 4 fractional digits for design 'des_check' timing"
+-- Requested 4 fractional digits for design 'des_check' timing
+# puts "-- Requested 4 fractional digits for design 'des_check' capacitance"
+-- Requested 4 fractional digits for design 'des_check' capacitance
+# puts "-- Characterization mode: p2p "
+-- Characterization mode: p2p 
+# puts "-- Synthesis Timing report: '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/timing_summary_synth.rpt' "
+-- Synthesis Timing report: '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/timing_summary_synth.rpt' 
+# puts "-- Synthesis Utilization report: '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/utilization_synth.rpt' "
+-- Synthesis Utilization report: '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/utilization_synth.rpt' 
+# global env
+# set CATAPULT_HOME "/opt/mentorgraphics/Catapult_10.5c/Mgc_home"
+# set RTL_TOOL_SCRIPT_DIR /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# set RTL_TOOL_SCRIPT_DIR [file dirname [file normalize [info script] ] ]
+# puts "-- RTL_TOOL_SCRIPT_DIR is set to '$RTL_TOOL_SCRIPT_DIR' "
+-- RTL_TOOL_SCRIPT_DIR is set to '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl' 
+# puts "==========================================="
+===========================================
+# puts "Catapult driving Vivado in Non-Project mode"
+Catapult driving Vivado in Non-Project mode
+# puts "==========================================="
+===========================================
+# set outputDir /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# set outputDir $RTL_TOOL_SCRIPT_DIR
+# create_project -force tcl_concat_vhdl
+# read_vhdl -library work ../concat_rtl.vhdl
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY XPM_FIFO} [current_project]
+# read_xdc $outputDir/concat_rtl.vhdl.xv.sdc
+# set_property part xcvu11p-flga2577-1-e [current_project]
+# synth_design   -top des_check -part xcvu11p-flga2577-1-e -mode out_of_context  
+Command: synth_design -top des_check -part xcvu11p-flga2577-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu11p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu11p'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 48956 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1531.586 ; gain = 47.996 ; free physical = 18623 ; free virtual = 567699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'des_check' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:7807]
+INFO: [Synth 8-3491] module 'des_check_core' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:905' bound to instance 'des_check_core_inst' of component 'des_check_core' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:7827]
+INFO: [Synth 8-638] synthesizing module 'des_check_core' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:918]
+	Parameter rscid bound to: 1 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'ccs_in_v1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:45' bound to instance 'input_rsci' of component 'ccs_in_v1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2341]
+INFO: [Synth 8-638] synthesizing module 'ccs_in_v1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:56]
+	Parameter rscid bound to: 1 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ccs_in_v1' (1#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:56]
+	Parameter rscid bound to: 2 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'ccs_in_v1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:45' bound to instance 'key_rsci' of component 'ccs_in_v1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2353]
+INFO: [Synth 8-638] synthesizing module 'ccs_in_v1__parameterized1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:56]
+	Parameter rscid bound to: 2 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ccs_in_v1__parameterized1' (1#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:56]
+	Parameter rscid bound to: 3 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'ccs_out_v1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:107' bound to instance 'return_rsci' of component 'ccs_out_v1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2365]
+INFO: [Synth 8-638] synthesizing module 'ccs_out_v1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:118]
+	Parameter rscid bound to: 3 - type: integer 
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ccs_out_v1' (2#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:118]
+	Parameter valid bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mgc_io_sync_v2' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:166' bound to instance 'input_rsc_triosy_obj' of component 'mgc_io_sync_v2' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2393]
+INFO: [Synth 8-638] synthesizing module 'mgc_io_sync_v2' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:176]
+	Parameter valid bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mgc_io_sync_v2' (3#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:176]
+	Parameter valid bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mgc_io_sync_v2' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:166' bound to instance 'key_rsc_triosy_obj' of component 'mgc_io_sync_v2' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2401]
+	Parameter valid bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mgc_io_sync_v2' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:166' bound to instance 'return_rsc_triosy_obj' of component 'mgc_io_sync_v2' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2409]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_6_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2417]
+INFO: [Synth 8-638] synthesizing module 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:232]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:244]
+INFO: [Synth 8-256] done synthesizing module 'des_checkmgc_rom_12_512_4_1' (4#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:232]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_5_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2429]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_2_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2441]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2453]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_1_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2465]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_4_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2477]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_3_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2489]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_7_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2501]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_14_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2513]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_13_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2527]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_10_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2541]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_8_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2555]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_9_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2569]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_12_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2583]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_11_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2597]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_15_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2611]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_22_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2625]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_21_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2639]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_18_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2653]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_16_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2667]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_17_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2681]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_20_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2695]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_19_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2709]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_23_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2723]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_30_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2737]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_29_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2749]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_26_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2760]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_24_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2772]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_25_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2784]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_28_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2796]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_27_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2808]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_31_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2820]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_38_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2832]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_37_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2844]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_34_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2855]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_32_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2867]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_33_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2879]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_36_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2891]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_35_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2903]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_39_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2915]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_46_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2927]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_45_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2939]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_42_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2950]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_40_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2962]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_41_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2974]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_44_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2986]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_43_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:2998]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_47_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3010]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_54_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3022]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_53_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3034]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_50_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3045]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_48_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3057]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_49_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3069]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_52_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3081]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_51_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3093]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_55_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3105]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_62_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3116]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_61_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3128]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_58_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3139]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_56_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3151]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_57_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3163]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_60_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3175]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_59_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3187]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_63_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3199]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_70_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3211]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_69_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3223]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_66_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3234]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_64_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3246]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_65_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3258]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_68_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3270]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_67_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3282]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_71_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3294]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_78_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3306]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_77_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3318]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_74_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3329]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_72_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3341]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_73_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3353]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_76_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3365]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_75_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3377]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_79_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3389]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_86_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3401]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_85_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3413]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_82_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3425]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_80_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3437]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_81_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3449]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_84_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3461]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_83_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3473]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_87_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3485]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_94_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3497]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_93_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3509]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_90_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3521]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_88_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3533]
+INFO: [Synth 8-3491] module 'des_checkmgc_rom_12_512_4_1' declared at '/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:225' bound to instance 'operator_8_false_1_read_rom_S_rom_map_1_89_rg' of component 'des_checkmgc_rom_12_512_4_1' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:3545]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'des_check_core_core_fsm' [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:808]
+INFO: [Synth 8-256] done synthesizing module 'des_check_core_core_fsm' (5#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:808]
+INFO: [Synth 8-256] done synthesizing module 'des_check_core' (6#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:918]
+INFO: [Synth 8-256] done synthesizing module 'des_check' (7#1) [/home/ds6365/DES_SYN_FIN/DES_syn.v1/concat_rtl.vhdl:7807]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1595.344 ; gain = 111.754 ; free physical = 18621 ; free virtual = 567698
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1595.344 ; gain = 111.754 ; free physical = 18626 ; free virtual = 567703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1595.344 ; gain = 111.754 ; free physical = 18626 ; free virtual = 567703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcvu11p-flga2577-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_io_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc:7]
+Finished Parsing XDC File [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/des_check_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/des_check_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2682.562 ; gain = 0.000 ; free physical = 17628 ; free virtual = 566704
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2682.562 ; gain = 0.000 ; free physical = 17628 ; free virtual = 566705
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2682.566 ; gain = 0.000 ; free physical = 17628 ; free virtual = 566705
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2682.566 ; gain = 0.004 ; free physical = 17628 ; free virtual = 566705
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:41 . Memory (MB): peak = 2682.566 ; gain = 1198.977 ; free physical = 17711 ; free virtual = 566787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu11p-flga2577-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:41 . Memory (MB): peak = 2682.566 ; gain = 1198.977 ; free physical = 17710 ; free virtual = 566787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:41 . Memory (MB): peak = 2682.566 ; gain = 1198.977 ; free physical = 17710 ; free virtual = 566787
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-802] inferred FSM for state register 'state_var_reg' in module 'des_check_core_core_fsm'
+INFO: [Synth 8-5546] ROM "fsm_output" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "state_var_NS" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                00000000000000001 |                            00000
+*
+                main_c_1 |                00000000000000010 |                            00001
+                main_c_2 |                00000000000000100 |                            00010
+                main_c_3 |                00000000000001000 |                            00011
+                main_c_4 |                00000000000010000 |                            00100
+                main_c_5 |                00000000000100000 |                            00101
+                main_c_6 |                00000000001000000 |                            00110
+                main_c_7 |                00000000010000000 |                            00111
+                main_c_8 |                00000000100000000 |                            01000
+                main_c_9 |                00000001000000000 |                            01001
+               main_c_10 |                00000010000000000 |                            01010
+               main_c_11 |                00000100000000000 |                            01011
+               main_c_12 |                00001000000000000 |                            01100
+               main_c_13 |                00010000000000000 |                            01101
+               main_c_14 |                00100000000000000 |                            01110
+               main_c_15 |                01000000000000000 |                            01111
+               main_c_16 |                10000000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_var_reg' using encoding 'one-hot' in module 'des_check_core_core_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 2682.566 ; gain = 1198.977 ; free physical = 17698 ; free virtual = 566775
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'des_check_core_inst/input_rsc_triosy_obj' (mgc_io_sync_v2) to 'des_check_core_inst/key_rsc_triosy_obj'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1280  
++---Registers : 
+	               64 Bit    Registers := 1     
+	               63 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                1 Bit    Registers := 514   
++---Muxes : 
+	  17 Input     17 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module des_check_core_core_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input     17 Bit        Muxes := 2     
+Module des_check_core 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1280  
++---Registers : 
+	               64 Bit    Registers := 1     
+	               63 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                1 Bit    Registers := 514   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9216 (col length:96)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Common 17-14] Message 'Synth 8-5547' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (des_check_core_inst/des_check_core_core_fsm_inst/FSM_onehot_state_var_reg[0]) is unused and will be removed from module des_check.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:02:27 . Memory (MB): peak = 2682.566 ; gain = 1198.977 ; free physical = 17678 ; free virtual = 566759
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------------------+------------+---------------+----------------+
+|Module Name                 | RTL Object | Depth x Width | Implemented As | 
++----------------------------+------------+---------------+----------------+
+|des_checkmgc_rom_12_512_4_1 | p_0_out    | 512x4         | LUT            | 
++----------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:04:56 . Memory (MB): peak = 2994.789 ; gain = 1511.199 ; free physical = 17216 ; free virtual = 566297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:04:59 . Memory (MB): peak = 3033.812 ; gain = 1550.223 ; free physical = 17202 ; free virtual = 566283
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:09 ; elapsed = 00:05:01 . Memory (MB): peak = 3033.812 ; gain = 1550.223 ; free physical = 17223 ; free virtual = 566304
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:10 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:10 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:11 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:11 ; elapsed = 00:05:02 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |  1120|
+|2     |LUT3 |    96|
+|3     |LUT5 |    32|
+|4     |LUT6 |   515|
+|5     |FDRE |   714|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  2477|
+|2     |  des_check_core_inst            |des_check_core          |  2477|
+|3     |    des_check_core_core_fsm_inst |des_check_core_core_fsm |    51|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:11 ; elapsed = 00:05:03 . Memory (MB): peak = 3033.816 ; gain = 1550.227 ; free physical = 17225 ; free virtual = 566306
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:03:41 . Memory (MB): peak = 3033.816 ; gain = 463.004 ; free physical = 17253 ; free virtual = 566334
+Synthesis Optimization Complete : Time (s): cpu = 00:02:11 ; elapsed = 00:05:03 . Memory (MB): peak = 3033.820 ; gain = 1550.227 ; free physical = 17256 ; free virtual = 566337
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'des_check' is not ideal for floorplanning, since the cellview 'des_check_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_io_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc:7]
+Finished Parsing XDC File [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3053.613 ; gain = 0.000 ; free physical = 17174 ; free virtual = 566255
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+237 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:05:10 . Memory (MB): peak = 3053.613 ; gain = 1582.156 ; free physical = 17230 ; free virtual = 566311
+# write_checkpoint -force $outputDir/post_synth
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3053.613 ; gain = 0.000 ; free physical = 17232 ; free virtual = 566313
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_io_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.sdc:7]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3210.648 ; gain = 0.000 ; free physical = 17117 ; free virtual = 566199
+INFO: [Common 17-1381] The checkpoint '/home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/post_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3210.652 ; gain = 157.039 ; free physical = 16971 ; free virtual = 566053
+# set viv_report_dir /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# report_utilization -file $viv_report_dir/utilization_synth.rpt
+# report_timing_summary -path_type summary -file $viv_report_dir/timing_summary_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 4121.770 ; gain = 911.117 ; free physical = 16480 ; free virtual = 565561
+# report_timing -nworst 1 -from [all_inputs] -to [all_outputs] -file $viv_report_dir/timing_summary_synth.rpt -append
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+WARNING: [Timing 38-164] This design has multiple clocks. Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+INFO: [Timing 38-72] No paths found.
+# if { [llength [all_clocks] ] > 0 } {
+#   report_timing -nworst 1 -from [all_inputs] -to [all_clocks] -file $viv_report_dir/timing_summary_synth.rpt -append
+#   report_timing -nworst 1 -from [all_clocks] -to [all_clocks] -file $viv_report_dir/timing_summary_synth.rpt -append
+#   report_timing -nworst 1 -from [all_clocks] -to [all_outputs] -file $viv_report_dir/timing_summary_synth.rpt -append
+# }
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+# if { ([info exists env(Xilinx_RUN_PNR)] && $env(Xilinx_RUN_PNR) ) || 
+#      ([info exists env(Xilinx_BITGEN)] && $env(Xilinx_BITGEN) ) } {
+#   opt_design
+#   place_design
+#   read_xdc /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv.signoff.sdc
+#   phys_opt_design
+#   write_checkpoint -force $outputDir/post_place
+#   route_design
+#   write_checkpoint -force $outputDir/post_route
+#   write_vhdl -force $outputDir/des_check_impl_netlist.vhd
+#   write_xdc -no_fixed_only -force $outputDir/des_check_impl.xdc
+#   if { [info exists env(Xilinx_BITGEN)] && $env(Xilinx_BITGEN) } {
+#     write_bitstream -force $outputDir/des_check.bit
+#   }
+# set viv_report_dir /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# report_utilization -file $viv_report_dir/utilization_placed.rpt
+# report_timing_summary -path_type summary -file $viv_report_dir/timing_summary_routed.rpt
+# report_timing -nworst 1 -from [all_inputs] -to [all_outputs] -file $viv_report_dir/timing_summary_routed.rpt -append
+# if { [llength [all_clocks] ] > 0 } {
+#   report_timing -nworst 1 -from [all_inputs] -to [all_clocks] -file $viv_report_dir/timing_summary_routed.rpt -append
+#   report_timing -nworst 1 -from [all_clocks] -to [all_clocks] -file $viv_report_dir/timing_summary_routed.rpt -append
+#   report_timing -nworst 1 -from [all_clocks] -to [all_outputs] -file $viv_report_dir/timing_summary_routed.rpt -append
+# }
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 21 12:55:03 2021...
+Downstream synthesis information: design='des_check' TID='Vivado' runtime=137 RTLSyn/runtime=137 RTLSyn/MinClkPrd=1.0100 RTLSyn/Delay=0.0930 RTLSyn/Slack=0.9120 RTLSyn/InputDelay=0.4340 RTLSyn/R2RDelay=1.0100 RTLSyn/WNS=0.9120 RTLSyn/TNS=0.0000 RTLSyn/Area(BRAMs)=0 RTLSyn/Area(CARRY8)=0 RTLSyn/Area(DSP)=0 RTLSyn/Area(FFs)=714 RTLSyn/Area(LUTs)=1763 RTLSyn/Area(MUXs)=0 RTLSyn/MAXPATH=1.0100 RTLSyn/ROUTERATIO=69.109 RTLSyn/WNS(In2Reg)=1.5580 RTLSyn/WNS(Reg2Output)=1.8720 RTLSyn/WNS(Reg2Reg)=0.9120

@@ -1,0 +1,342 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.54 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+go analyze
+Moving session transcript to file "/home/ds6365/catapult.log"
+/INPUTFILES/2
+solution file add ./des_tb.cpp
+solution file set /home/ds6365/des_tb.cpp -exclude true
+/INPUTFILES/1
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/ds6365/des_fun.h (CIN-69)
+solution file add ./des_fun.h
+
+# Messages from "go compile"
+
+# Info: Design complexity at end of 'compile': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'compile' on solution 'des_check.v1': elapsed time 31.25 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+Inlining routine 'operator<<<8, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<8, false>' (CIN-14)
+Inlining routine 'operator<<=<32, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Optimizing block '/des_check' ... (CIN-4)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator>><64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Inlining routine 'operator|<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator<<<32, false>' (CIN-14)
+# Info: CDesignChecker Shell script written to '/home/ds6365/DES_SYN_FIN/des_check.v1/CDesignChecker/design_checker.sh'
+Design 'des_check' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Info: Starting transformation 'compile' on solution 'des_check.v1' (SOL-8)
+Found top design routine 'des_check' specified by directive (CIN-52)
+Generating synthesis internal form... (CIN-3)
+solution design set des_check -top (HC-8)
+solution design set des_check -top
+go compile
+Inlining routine 'operator>><64, false>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'des_check' (CIN-14)
+Synthesizing routine 'des_check' (CIN-13)
+Inlining routine 'operator-<8, false>' (CIN-14)
+Inlining routine 'operator<<=<64, false>' (CIN-14)
+Loop '/des_check/core/for#1' iterated at most 56 times. (LOOP-2)
+Loop '/des_check/core/for' iterated at most 64 times. (LOOP-2)
+Loop '/des_check/core/loop_exapansion' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_PC2_subKey' iterated at most 48 times. (LOOP-2)
+Loop '/des_check/core/loop_post_Sbox_permutation' iterated at most 32 times. (LOOP-2)
+Loop '/des_check/core/loop_S_box' iterated at most 8 times. (LOOP-2)
+Loop '/des_check/core/loop_IP_INV' iterated at most 64 times. (LOOP-2)
+Loop '/des_check/core/loop_DES_rounds' iterated at most 16 times. (LOOP-2)
+# Info: Running transformation 'compile' on solution 'des_check.v1': elapsed time 29.98 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-15)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator&<32, false>' (CIN-14)
+Inlining routine 'operator>><8, false>' (CIN-14)
+Inlining routine 'operator>><65, true>' (CIN-14)
+Inlining routine 'operator&<64, false>' (CIN-14)
+Inlining routine 'operator-<8, false>' (CIN-14)
+
+# Messages from "go libraries"
+
+# Info: Design complexity at end of 'libraries': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'libraries' on solution 'des_check.v1': elapsed time 0.51 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+	DATA[2]= 0x0FFF
+
+	Encrypted data [2]= 0x3E46FE784B31F382
+	Key[2]= 0x50726F664B617269
+	Key[1]= 0x444A736861726D61
+	DATA[1]= 0x0FF
+Encryption result for (D[2],K[2]) is valid 
+    /opt/mentorgraphics/Catapult_10.5c/Mgc_home/bin/make -f ./scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci build < "/dev/null" (BASIC-15)
+	Encrypted data [1]= 0x0B486EC8110027077
+Make utility invoked from '/home/ds6365/DES_SYN_FIN/des_check.v1'
+Encryption result for (D[4],K[4]) is valid 
+Creating simulation directory 'scverify/orig_cxx_osci'
+	Encrypted data [3]= 0x0AF9249C93318B605
+============================================
+	DATA[4]= 0x0FFFFF
+solution library add Xilinx_ROMS
+
+solution library add mgc_Xilinx-VIRTEX-uplus-1_beh -- -rtlsyntool Vivado -manufacturer Xilinx -family VIRTEX-uplus -speed -1 -part xcvu11p-flga2577-1-e
+
+Making './scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim'
+Encryption result for (D[3],K[3]) is valid 
+flow run /SCVerify/launch_make ./scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim
+	Key[3]= 0x50726F664D696B68
+	DATA[3]= 0x0FFFF
+Linking executable
+	Key[5]= 0x42454E42454E4245
+============================================
+	DATA[5]= 0x0FFFFFF
+    /opt/mentorgraphics/Catapult_10.5c/Mgc_home/bin/make -f ./scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci sim (BASIC-14)
+Encryption result for (D[6],K[6]) is valid 
+/opt/mentorgraphics/Catapult_10.5c/Mgc_home/bin/g++  -L/opt/mentorgraphics/Catapult_10.5c/Mgc_home/shared/lib/Linux/gcc -L/opt/mentorgraphics/Catapult_10.5c/Mgc_home/shared/lib -L/opt/mentorgraphics/Catapult_10.5c/Mgc_home/shared/lib/Linux/gcc scverify/orig_cxx_osci/des_tb.cpp.cxxts.o -Wl,-Bstatic -lsystemc -Wl,-Bdynamic -lpthread -o scverify/orig_cxx_osci/scverify_top
+============================================
+	Encrypted data [5]= 0x6BF1B50ADE32559A
+mkdir -p scverify/orig_cxx_osci
+	Encrypted data [4]= 0x65B6C2BBDCA73C02
+/opt/mentorgraphics/Catapult_10.5c/Mgc_home/bin/g++ -DCCS_SCVERIFY_USE_CCS_BLOCK -DCCS_DUT_SYSC -DSC_INCLUDE_DYNAMIC_PROCESSES -DSC_USE_STD_STRING -DCCS_MISMATCHED_OUTPUTS_ONLY -DDEADLOCK_DETECTION -std=gnu++11 -Wall -Wno-unknown-pragmas -Wno-unused-label -g -I. -I../.. -I. -I/opt/mentorgraphics/Catapult_10.5c/Mgc_home/shared/include -I/opt/mentorgraphics/Catapult_10.5c/Mgc_home/shared/include -I/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/hls_pkgs/src -I/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs -I/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/hls_pkgs/mgc_comps_src -DSC_USE_STD_STRING  -c ../../des_tb.cpp -o scverify/orig_cxx_osci/des_tb.cpp.cxxts.o
+	Key[4]= 0x616E757368726565
+Compiling C++ file: ../../des_tb.cpp
+
+	Encrypted data [0]= 0x0D60592FDD11F6D1A
+Encryption result for (D[5],K[5]) is valid 
+
+	Key[0]= 0x10005578
+Encryption result for (D[7],K[7]) is valid 
+
+	Key[7]= 0x1005578000000000
+Encryption result for (D[1],K[1]) is valid 
+	DATA[7]= 0x0FF00000000000000
+Simulating design
+	DATA[6]= 0x0F000000000000000
+============================================
+
+	DATA[0]= 0x0F
+	Encrypted data [6]= 0x0E4868A2E4192873D
+cd ../..; ./DES_SYN_FIN/des_check.v1/scverify/orig_cxx_osci/scverify_top 
+	Key[6]= 0x4143484436343633
+	Encrypted data [8]= 0x09E731B5C3BE3A898
+	Key[8]= 0x100557800
+
+Encryption result for (D[9],K[9]) is valid 
+Encryption result for (D[8],K[8]) is valid 
+	Encrypted data [7]= 0x36C6634DCFE1E37C
+	DATA[8]= 0x0FFF0000000000000
+
+go libraries
+
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Starting transformation 'libraries' on solution 'des_check.v1' (SOL-8)
+	Key[9]= 0x46696E6C4578616D
+	DATA[9]= 0x0FFFF000000000000
+Encryption result for (D[a],K[a]) is valid 
+	Encrypted data [9]= 0x0F04756DFB2152639
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/ccs_xilinx/Xilinx_ROMS.lib' [Xilinx_ROMS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/ccs_xilinx/mgc_Xilinx-VIRTEX-uplus-1_beh.lib' [mgc_Xilinx-VIRTEX-uplus-1_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+
+# Messages from "go assembly"
+
+# Info: Design complexity at end of 'assembly': Total ops = 1024, Real ops = 84, Vars = 458 (SOL-21)
+# Info: Completed transformation 'assembly' on solution 'des_check.v1': elapsed time 1.56 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+/CLOCKS {clk {-CLOCK_PERIOD 2 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 1 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 2 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 1 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# Info: Starting transformation 'assembly' on solution 'des_check.v1' (SOL-8)
+go assembly
+
+# Messages from "go architect"
+
+# Info: Design complexity at end of 'loops': Total ops = 2945, Real ops = 1281, Vars = 625 (SOL-21)
+# Info: Completed transformation 'loops' on solution 'des_check.v1': elapsed time 14.14 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+Loop '/des_check/core/loop_PC2_subKey' is being fully unrolled (48 times). (LOOP-7)
+Loop '/des_check/core/loop_post_Sbox_permutation' is being fully unrolled (32 times). (LOOP-7)
+Loop '/des_check/core/loop_S_box' is being fully unrolled (8 times). (LOOP-7)
+/des_check/core/for/UNROLL yes
+directive set /des_check/core/for -UNROLL yes
+/des_check/core/for#1/UNROLL yes
+directive set /des_check/core/for#1 -UNROLL yes
+/des_check/core/loop_exapansion/UNROLL yes
+directive set /des_check/core/loop_exapansion -UNROLL yes
+/des_check/core/loop_S_box/UNROLL yes
+directive set /des_check/core/loop_S_box -UNROLL yes
+/des_check/core/loop_DES_rounds/UNROLL yes
+directive set /des_check/core/loop_DES_rounds -UNROLL yes
+/des_check/core/loop_PC2_subKey/UNROLL yes
+directive set /des_check/core/loop_PC2_subKey -UNROLL yes
+# Info: Starting transformation 'loops' on solution 'des_check.v1' (SOL-8)
+go architect
+Loop '/des_check/core/for#1' is being fully unrolled (56 times). (LOOP-7)
+Loop '/des_check/core/for' is being fully unrolled (64 times). (LOOP-7)
+/des_check/core/loop_post_Sbox_permutation/UNROLL yes
+directive set /des_check/core/loop_post_Sbox_permutation -UNROLL yes
+/des_check/core/loop_IP_INV/UNROLL yes
+directive set /des_check/core/loop_IP_INV -UNROLL yes
+Loop '/des_check/core/loop_DES_rounds' is being fully unrolled (16 times). (LOOP-7)
+Loop '/des_check/core/loop_IP_INV' is being fully unrolled (64 times). (LOOP-7)
+Loop '/des_check/core/main' is left rolled. (LOOP-4)
+Loop '/des_check/core/loop_exapansion' is being fully unrolled (48 times). (LOOP-7)
+# Info: Design complexity at end of 'memories': Total ops = 2940, Real ops = 1281, Vars = 618 (SOL-21)
+# Info: Completed transformation 'memories' on solution 'des_check.v1': elapsed time 7.25 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+ROM Resource '/des_check/S.rom:rsc' (from var: S.rom) mapped to 'Xilinx_ROMS.mgc_rom' (size: 512 x 4). (MEM-10)
+I/O-Port Resource '/des_check/input:rsc' (from var: input) mapped to 'ccs_ioport.ccs_in' (size: 64). (MEM-2)
+# Info: Starting transformation 'memories' on solution 'des_check.v1' (SOL-8)
+I/O-Port Resource '/des_check/return:rsc' (from var: return) mapped to 'ccs_ioport.ccs_out' (size: 64). (MEM-2)
+I/O-Port Resource '/des_check/key:rsc' (from var: key) mapped to 'ccs_ioport.ccs_in' (size: 64). (MEM-2)
+# Info: Design complexity at end of 'cluster': Total ops = 2940, Real ops = 1281, Vars = 618 (SOL-21)
+# Info: Completed transformation 'cluster' on solution 'des_check.v1': elapsed time 0.47 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+# Info: Starting transformation 'cluster' on solution 'des_check.v1' (SOL-8)
+# Info: Design complexity at end of 'architect': Total ops = 2940, Real ops = 1281, Vars = 618 (SOL-21)
+# Info: Completed transformation 'architect' on solution 'des_check.v1': elapsed time 2.39 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+Design 'des_check' contains '1281' real operations. (SOL-11)
+# Info: Starting transformation 'architect' on solution 'des_check.v1' (SOL-8)
+
+# Messages from "go allocate"
+
+# Info: Design complexity at end of 'allocate': Total ops = 2940, Real ops = 1281, Vars = 618 (SOL-21)
+# Info: Completed transformation 'allocate' on solution 'des_check.v1': elapsed time 5.47 seconds, memory usage 1382380kB, peak memory usage 1382380kB (SOL-9)
+Prescheduled LOOP '/des_check/core/main' (17 c-steps) (SCHD-7)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled SEQUENTIAL '/des_check/core' (total length 17 c-steps) (SCHD-8)
+Prescheduled LOOP '/des_check/core/core:rlp' (0 c-steps) (SCHD-7)
+# Info: Starting transformation 'allocate' on solution 'des_check.v1' (SOL-8)
+go allocate
+/des_check/core/DESIGN_GOAL latency
+# Info: Select qualified components for data operations ... (CRAAS-3)
+directive set /des_check/core -DESIGN_GOAL Latency
+Performing concurrent resource allocation and scheduling on '/des_check/core' (CRAAS-1)
+Netlist written to file 'schedule.gnt' (NET-4)
+/des_check/core/EFFORT_LEVEL high
+directive set /des_check/core -EFFORT_LEVEL high
+At least one feasible schedule exists. (CRAAS-9)
+# Info: Initial schedule of SEQUENTIAL '/des_check/core': Latency = 16, Area (Datapath, Register, Total) = 2457.60, 0.00, 2457.60 (CRAAS-11)
+Resource allocation and scheduling done. (CRAAS-2)
+# Info: Final schedule of SEQUENTIAL '/des_check/core': Latency = 16, Area (Datapath, Register, Total) = 2457.60, 0.00, 2457.60 (CRAAS-12)
+
+# Messages from "go schedule"
+
+# Info: Design complexity at end of 'schedule': Total ops = 3041, Real ops = 1281, Vars = 695 (SOL-21)
+# Info: Completed transformation 'schedule' on solution 'des_check.v1': elapsed time 5.95 seconds, memory usage 1447920kB, peak memory usage 1447920kB (SOL-9)
+Global signal 'key:rsc.dat' added to design 'des_check' for component 'key:rsci' (LIB-3)
+Global signal 'return:rsc.triosy.lz' added to design 'des_check' for component 'return:rsc.triosy:obj' (LIB-3)
+Global signal 'input:rsc.dat' added to design 'des_check' for component 'input:rsci' (LIB-3)
+Global signal 'key:rsc.triosy.lz' added to design 'des_check' for component 'key:rsc.triosy:obj' (LIB-3)
+Global signal 'input:rsc.triosy.lz' added to design 'des_check' for component 'input:rsc.triosy:obj' (LIB-3)
+Global signal 'return:rsc.dat' added to design 'des_check' for component 'return:rsci' (LIB-3)
+# Info: Starting transformation 'schedule' on solution 'des_check.v1' (SOL-8)
+go extract
+Performing concurrent resource allocation and scheduling on '/des_check/core' (CRAAS-1)
+Report written to file 'cycle.rpt'
+
+# Messages from "go dpfsm"
+
+# Info: Design complexity at end of 'dpfsm': Total ops = 4213, Real ops = 1846, Vars = 667 (SOL-21)
+# Info: Completed transformation 'dpfsm' on solution 'des_check.v1': elapsed time 15.30 seconds, memory usage 1447920kB, peak memory usage 1447920kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'des_check.v1' (SOL-8)
+Performing FSM extraction... (FSM-1)
+
+# Messages from "go extract"
+
+# Info: Design complexity at end of 'instance': Total ops = 4469, Real ops = 1846, Vars = 4193 (SOL-21)
+# Info: Completed transformation 'instance' on solution 'des_check.v1': elapsed time 7.93 seconds, memory usage 1447920kB, peak memory usage 1447920kB (SOL-9)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Starting transformation 'instance' on solution 'des_check.v1' (SOL-8)
+# Info: Completed transformation 'extract' on solution 'des_check.v1': elapsed time 21.76 seconds, memory usage 1513456kB, peak memory usage 1513456kB (SOL-9)
+# Info: Running transformation 'extract' on solution 'des_check.v1': elapsed time 20.35 seconds, memory usage 1513456kB, peak memory usage 1513456kB (SOL-15)
+# Info: Design complexity at end of 'extract': Total ops = 4469, Real ops = 1846, Vars = 683 (SOL-21)
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Finished writing concatenated simulation file: /home/ds6365/DES_SYN_FIN/des_check.v1/concat_sim_rtl.vhdl
+Add dependent file: ./rtl.vhdl
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_vhdl/concat_rtl.vhdl.xv'
+order file name is: rtl.vhdl_order_sim.txt
+Finished writing concatenated file: /home/ds6365/DES_SYN_FIN/des_check.v1/concat_rtl.vhdl
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.vhd
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+# Info: Xilinx Vivado synthesis script written to 'vivado_vhdl/rtl.vhdl.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_v/concat_rtl.v.xv'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+Generating scverify_top.cpp ()
+ROM component 'mgc_rom(12,512,4,1)' initialization mode: inline. (MEM-76)
+Netlist written to file 'rtl.vhdl' (NET-4)
+Add dependent file: ./rtl_des_checkmgc_rom_12_512_4_1.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Finished writing concatenated simulation file: /home/ds6365/DES_SYN_FIN/des_check.v1/concat_sim_rtl.v
+Netlist written to file 'rtl.v' (NET-4)
+Add dependent file: ./rtl.v
+order file name is: rtl.v_order_sim.txt
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+Finished writing concatenated file: /home/ds6365/DES_SYN_FIN/des_check.v1/concat_rtl.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.v
+# Info: Xilinx Vivado synthesis script written to 'vivado_v/rtl.v.xv'
+Add dependent file: ./rtl.v
+Add dependent file: ./rtl_des_checkmgc_rom_12_512_4_1.v
+generate concat
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Info: Starting transformation 'extract' on solution 'des_check.v1' (SOL-8)
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+order file name is: rtl.v_order.txt
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Report written to file 'rtl.rpt'
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.vhd
+Add dependent file: ./rtl.vhdl
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+Add dependent file: ./rtl_des_checkmgc_rom_12_512_4_1.vhdl
+generate concat
+# Error: Top function does not appear to have the CCS_BLOCK macro wrapping the function name
+Generating SCVerify testbench files
+Add dependent file: /opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+order file name is: rtl.vhdl_order.txt
+Add dependent file: ./rtl_des_checkmgc_rom_12_512_4_1.vhdl

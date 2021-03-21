@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 21 12:48:21 2021
+# Process ID: 48782
+# Current directory: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl
+# Command line: vivado -mode batch -source /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv -log /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.log 
+# Log file: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.log
+# Journal file: /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/vivado.jou
+#-----------------------------------------------------------
+source /home/ds6365/DES_SYN_FIN/DES_syn.v1/vivado_concat_vhdl/concat_rtl.vhdl.xv

@@ -1,0 +1,12 @@
+/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/ccs_out_v1.v
+/opt/mentorgraphics/Catapult_10.5c/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+../td_ccore_solutions/ROM_1i6_1o4_cfafff97e973ca9580e646fecdc2f814b3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_d0e242163cbb0b2ce9c4399bc1cb50f5b3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_752c7ca65a598ada4acee0cd63d199c3b3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_ef717c7c87dc90ac6f7b34d533fe115fb3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_3c5c29b75c561d2b741f22e5a3a569dbb3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_ef4da7ff735c86ba85f23e51741d972cb3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_51ba7157b272cd3b87451219caf38e7cb3_0/rtl.v
+../td_ccore_solutions/ROM_1i6_1o4_8f60b2fc4a3ee4cef30040071bc0219cb3_0/rtl.v
+./rtl.v
